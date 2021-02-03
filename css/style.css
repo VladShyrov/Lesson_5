@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:regular,700");
+@import url("https://fonts.googleapis.com/css?family=Lora:regular,700");
+
+@font-face {
+  font-family: "Harting";
+  src: url("../fonts/HartingPlain.woff2") format("woff2"),
+    url("../fonts/HartingPlain.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Intro Rust Base Line";
+  src: url("../fonts/IntroRust-BaseLine.woff2") format("woff2"),
+    url("../fonts/IntroRust-BaseLine.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Intro Rust Base Line Shade";
+  src: url("../fonts/IntroRust-BaseLineShade.woff2") format("woff2"),
+    url("../fonts/IntroRust-BaseLineShade.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* Стили обнуления */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+  margin: 30px;
+}
+.header {
+  background-color: teal;
+  color: azure;
+  margin: 30px;
+  padding: 10px 10px 10px 10px;
+}
+.menu {
+  background-color: rgb(107, 140, 184);
+}
+.one {
+  text-align: center;
+  color: yellow;
+}
+.two {
+  color: violet;
+}
+.three {
+  text-align: center;
+  color: teal;
+}
+.four {
+  text-align: left;
+  color: blue;
+}
+.five {
+  text-align: center;
+  color: crimson;
+}
+.six {
+  color: darkgreen;
+}
+.seven {
+  text-align: center;
+  color: darkorange;
+}
+.eight {
+  text-align: left;
+  color: darkviolet;
+}
+.nine {
+  text-align: center;
+  color: darkgray;
+}
+.ten {
+  color: black;
+}
+.block {
+  display: inline-block;
+  color: chartreuse;
+  background-color: grey;
+  padding: 20px;
+}
+#title1 {
+  color: black;
+}
+.numeric {
+  color: black;
+}
+p {
+  color: cornsilk;
+  text-align: justify;
+  text-shadow: 1px 1.5px 1px #000;
+
+  padding: 30px 30px 30px 30px;
+}
+mark {
+  color: crimson;
+  background-color: cyan;
+}
+span {
+  display: inline;
+  font-family: "Intro Rust Base Line Shade";
+  color: yellow;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px rgb(247, 17, 247);
+}
+h1 {
+  font-family: Lora;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: capitalize;
+  color: #10375c;
+  text-shadow: 3px 2px 3px rgb(221, 236, 241);
+}
+h2 {
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: right;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  color: rgba(220, 224, 19, 0.2);
+  text-shadow: 2px 1px 2px rgb(236, 12, 12);
+}
+body {
+  font-family: "Intro Rust Base Line";
+  font-size: 20px;
+  margin: 30px;
+}
+.footer {
+  background-color: black;
+  padding: 10px;
+}
+.text {
+  background-color: crimson;
+  font-family: Lato;
+  font-size: 20px;
+  overflow: hidden;
+}
+.text_color {
+  color: #dd2c00;
+  font-family: Lora;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 67px;
+  letter-spacing: 0em;
+}
+/* Обращаемся и к .pargraph и к .text__item */
+.paragraph,
+.text__item {
+  color: green;
+  margin: 10px;
+}
+/* Обращаемся и к .item и к .greentext */
+.item,
+.greentext {
+  color: darkblue;
+  margin: 15px 15px 15px 15px;
+}
+/* Меняю цвет ссылки */
+.href {
+  color: white;
+}
+ol {
+  background-color: thistle;
+}
+li {
+  color: red;
+  padding: 30px;
+  overflow: auto;
+  width: 150px;
+  height: 250px;
+}
+/* Красит вложеность того же уровня */
+.list_text ~ li {
+  font-family: "Harting";
+  color: aquamarine;
+  text-transform: uppercase;
+  text-shadow: -2px 1px 2px #000;
+}
+/* Красит следуйщий объект */
+.list_item + li {
+  color: black;
+}
+/* Красит span в именно этого класса */
+.list_item > span {
+  font-family: "Harting";
+  color: blueviolet;
+  text-decoration: line-through;
+}
+/* Принудительно красит класс */
+li.list__item {
+  color: brown;
+}
